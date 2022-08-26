@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Pág 3
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,20 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Pág 3</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div id="container">
+
+    <ion-label>base:</ion-label>
+    <ion-input placeholder="escreva aqui:"[(ngModel)]="num1"></ion-input>
+    <ion-label>altura:</ion-label>
+    <ion-input placeholder="escreva aqui:"[(ngModel)]="num2"></ion-input>
+    <ion-button  (click)="calcular()" color="warning " shape="round">calcular</ion-button>
+    <p>{{ saida }}</p>
+  
+  </div>
+  
+ 
 </ion-content>
